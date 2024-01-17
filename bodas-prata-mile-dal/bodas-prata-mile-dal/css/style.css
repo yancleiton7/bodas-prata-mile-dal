@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif, Tahoma, sans-serif;
+}
+
+
+
+
+
+html,body { 
+    height: 100%;
+    font-family: pixel;
+    letter-spacing: 2px;
+
+}
+
+.game {
+    background-color: rgb(224, 224, 224);
+    /* background-image: url(../imagens/fotos/bg-sky.gif); */
+    background-size: contain;
+    background-position: center;
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: steelblue;
+    font-size: 30px;
+    flex-direction: column;
+    border:  solid #ccc
+    
+}
+
+.box-game {
+    background-color: white;
+    box-shadow: #ccc;
+    width: 80%;
+    min-height: 300px;
+    border: 2px solid rgb(223, 206, 115);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.game .logo {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    max-height: 15%;
+    min-height: 150px;
+    background-image: url(../imagens/logo_jogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.start {
+    
+    margin: 10px auto  ;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+
+.start:hover {
+    color: gold;
+}
+
+input{
+    appearance: none;
+}
+
+#formulario{
+    background-color: (224, 224, 224);
+}
+
+#formulario .logo {
+    height: 10%;
+    max-height: 15%;
+    min-height: 150px;
+    background-image: url(../imagens/logo_jogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#formulario input{
+    font-family: pixel;
+    width: 98%;
+    padding: 5px 5px;
+    margin-top: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+
+.entrada {
+    display: block;
+    padding: 3px 2px;
+    width: 600px;
+    max-width: 95%;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 80%;
+    
+}
+#formulario p{
+    display: block;
+    color: gray;
+    font-size: 25px;
+    margin: 0;
+    
+}
+
+#formulario .seguir {
+    display: inline-block;
+    margin-top: 15px;
+    height: 40px;
+    width: 200px;
+    max-width: 85%;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+}
+
+#formulario .seguir:hover {
+    color: gold;
+}
+
+
+
+.historia {
+    background-image: url(../imagens/fotos/bg-sky.gif);
+    background-size: contain;
+    background-position: center;
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: steelblue;
+    font-size: 30px;
+    flex-direction: column;
+    
+}
+
+.box-historia {
+    width: 80%;
+    min-height: 300px;
+    border: 5px solid rgb(93, 178, 211);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+
+.pular{
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(93, 178, 211);
+    border-radius: 15px;
+    margin: 10px auto;
+    cursor: pointer;
+    text-decoration: none;
+    border: 5px solid rgba(255, 255, 255, 0);
+    padding: 10px;
+}
+
+.pular:hover {
+    border-color: white;
+    transition: 0.1;
+    transition-timing-function: linear;
+}
+.person {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.iasmin {
+    background-image: url(../imagens/fotos/thais.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(93, 178, 211);
+    margin-bottom: 10px;
+    flex-flow: wrap-reverse;
+}
+
+.yan {
+    background-image: url(../imagens/fotos/tiere.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(93, 178, 211);
+    margin-bottom: 10px;
+    flex-flow: wrap-reverse;
+}
+
+
+
+
+.abertura {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    background-image: url(../imagens/fotos/bg-cegonha.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 40px;
+    
+    
+    
+}
+
+.abertura .box {
+    
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0;
+    width: 94%;
+    max-height: 95%;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow:  10px 10px 5px rgb(11, 25, 72);
+    padding: 10px 10px;
+    
+}
+
+.box .icons {
+    width: 35%;
+    min-width: 150px;
+    max-width: 200px ;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro > p {
+    color: steelblue;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.botoes > .carta {  
+    width: 100px;
+    height: auto;
+    margin: 5px 5px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    
+
+}
+
+.botoes > .carta:hover {
+    border-color: white;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+.convite {
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    background-image: url(../imagens/fotos/bg-baby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    
+}
+
+.convite .box {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 600px;
+    max-width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow:  10px 10px 5px grey;
+    
+    
+}
+
+.box .life {
+    width: 30%;
+    height: auto;
+
+}
+
+.pergunta > p {
+    color: rgb(68, 68, 68);
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.box:last-child {
+    font-size: 15px;
+    color: rgb(119, 118, 118);
+    margin-top: 15px;
+}
+
+.botoes{
+    padding: 5px 10px;
+}
+
+.botoes > .btn {
+    width: 20%;
+    height: auto;
+    min-width: 200px;
+    margin: 5px 5px;
+    border: 5px solid rgba(255, 255, 255, 0 );
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.botoes > .btn:hover {
+    border-color: rgb(70, 70, 70);
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+
+
+.final {
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    background-image: url(../imagens/fotos/bg-baby.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    
+}
+
+.final .box {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 20px;
+    width: 600px;
+    max-width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow:  0px 10px 5px grey;
+}
+
+
+.agradecimento > p {
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.final .seguir {
+    font-size: 30px;
+    color: rgb(42, 42, 150);
+    border: 5px solid rgb(42, 42, 150);
+    border-radius: 15px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.final .seguir:hover {
+    background-color: rgba(106, 156, 248, 0.542);
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+
+
+
+.detalhes {
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    background-image: url(../imagens/fotos/bg-baby.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    
+}
+
+.detalhes .box {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 20px;
+    width: 600px;
+    max-width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow:  0px 10px 5px grey;
+}
+
+
+.spoilers p {
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.agradecimento .data {
+    color: red;
+}
+
+.carro {
+    width: 80px;
+    height: 80px;
+    background-image: url(../imagens/fotos/luke.gif);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px auto;
+}
+
+
+.lista p {
+    font-size: 30px;
+    color: rgb(42, 42, 150);
+    border: 5px solid rgb(42, 42, 150);
+    border-radius: 15px;
+    margin: 20px auto;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+.lista:hover {
+    background-color: rgba(106, 156, 248, 0.542);
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Para garantir que fique acima de outros elementos */
+    background-image: url(../imagens/fotos/audio.png);
+    background-size: cover;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    max-width: 10%;
+    max-height: 10%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+@media screen and (max-width: 480px) {
+   
+    .form p{
+        font-size: 30px;
+        
+    }
+    .pergunta p, .intro p , .agradecimento p , .spoilers p, .historia p{
+        font-size: 25px;
+        
+    }
+    .botoes > .carta {
+        width: 70px;
+    }
+
+    .formulario input{
+        font-size: 20px;
+    }
+ 
+    .convite > .box {
+        margin: 25% 0;
+    }
+    
+    .convite {
+        padding: 10% 0;
+    }
+}

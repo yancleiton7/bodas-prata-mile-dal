@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="Temos uma pergunta a te fazer" />
+    <meta property="og:description" content="Venha! Entre, dê uma olhada e se divirta" />
+    <meta property="og:image" content="imagens/tela.png" />  
+   
+    <script src="js/index.js"></script>
+    <title>Chá Revelação</title>
+</head>
+<body >
+
+    <audio id="adventure" loop >
+        <source src="audio/adventure.mp3" type="audio/mpeg">
+      </audio>
+    
+    <audio id="arcade" autoplay>
+        <source src="audio/arcade.mp3" type="audio/mpeg">
+        
+      </audio>
+    
+    <button class="floating-button" onclick="desativarMusica()"></button>
+
+    <section class="game" id="main" >
+            <div class="box-game">
+                <div class="logo"></div>
+                <div class="start" onclick="muda_pagina_flex('main', 'formulario'); play_audio('adventure')" >Iniciar</div>
+            </div>
+    </section>
+
+    <section id="formulario" class="game" style="display: none;">
+
+        <div class="box-game">
+                <div class="logo"></div>    
+                <div class="entrada">
+                    <p>Digite seu nome: </p>
+                    <input type="text" id="nome" required placeholder="nome">
+                    <div>
+                        <div class="seguir" id="feminino" onclick="capturar('nome', 'nome_convidado', 'nome_convidado1', 'formulario', 'historia'); ">Seguir</div>
+                    </div>
+    
+                </div>
+
+        </div>
+        
+        
+    </section>
+
+    <section class="historia"  id="historia" style="display: none;">
+        
+        <div class="person">
+            <div class="iasmin" id="iasmin"></div>
+            <div class="yan" id="yan" style="display: none;"></div>
+        </div>
+        <div class="box-historia">
+                <p id="vazio"></p>
+                <p id="prologo" style="display: none;">olá, tudo bem? Eu sou Jamile e quero te fazer um convite especial!</p>
+                <p id="p1" style="display: none;" >Eu e Dal vamos comemorar nossas bodas de prata e gostaríamos de sua presença.</p>
+                <p id="p2" style="display: none;">São 25 anos de muita história e a participação de nossos amigos e família vai deixar essa festa muito mais linda.</p>
+                <p id="p3" style="display: none;">Então, temos um encontro marcado?</p>
+                <p id="p4" style="display: none;">A comemoração será às 19h do dia 23 de março de 2024.</p>
+                <p id="p5" style="display: none;">Nos encontraremos na Paróquia Sagrado Coração de Jesus. Rua Santa Terezinha n°129 - Alto do Cabrito</p>
+                <p id="p6" style="display: none;">Já estamos te esperando! Se você for participar confirma sua presença com a gente, certo?</p>
+            
+        </div>
+        
+        <div class="pular" id="btn_pular" onclick="muda_texto()" >Continuar</div>
+
+
+    </section>
+
+    <section id="intro" class="abertura" style="display: none;">
+        <div class="box">
+            <img src="imagens/fotos/chicken.webp" class="icons" alt="">
+            <div class="intro">
+                <p>E aí, <span id="nome_convidado" style="color: #f595f2"></span>! Tudo bem?</p>
+                <p>Confirma sua presença em nossa festa!</p>
+                <p>É só clicar na cartinha aqui embaixo!</p>
+            </div>
+            <div class="botoes">
+                <img src="imagens/fotos/envelope_fechado.png" alt="" class="carta" onclick="confirmar_presenca(),pause_audio('adventure')">
+                
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
